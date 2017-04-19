@@ -40,6 +40,7 @@ class ExpressCheckController extends Controller
     public function expresscheck()
     {
         //创建示例对象
+	//$this->expresscheck = new \Yuxiaoyang\ExpressCheck\ExpressCheck();
         $this->expresscheck = new ExpressCheck();
         $expressNum = "30000029654217";
         $data = $this->expresscheck->search($expressNum);
